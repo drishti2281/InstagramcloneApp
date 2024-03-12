@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Instagram clone App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Instagram_Name">Instagram</string>
+    <string name="User_Name">User_Name</string>
+    <string name="Location">Jalandhar city</string>
+</resources>

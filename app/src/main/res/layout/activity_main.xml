@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/tvInstagram"
+       android:layout_width="match_parent"
+
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/balsamiq_sans"
+       android:text="@string/Instagram_Name"
+       android:textSize="30dp" />
+
+
+
+      <FrameLayout
+          android:id="@+id/container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/ivlike"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:padding="10dp"
+                android:src="@drawable/img_7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivMessenger"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:padding="10dp"
+                android:src="@drawable/img_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+         </LinearLayout>
+      </FrameLayout>
+
+   <fragment
+       android:id="@+id/fragment"
+       android:name="androidx.navigation.fragment.NavHostFragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:layout_below="@+id/container"
+       android:layout_above="@+id/bottomNavigation"
+       app:defaultNavHost="true"
+       app:navGraph="@navigation/bottom_nav_graph" />
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/bottomNavigation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="-5dp"
+          android:background="?android:attr/windowBackground"
+          app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>
+
+
