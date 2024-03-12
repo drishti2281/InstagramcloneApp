@@ -14,7 +14,8 @@ class StoryRecycler(var story:List<CreateStory>): RecyclerView.Adapter<StoryRecy
     }
 
     override fun onBindViewHolder(holder: StoryViewHolder, position: Int) {
-        holder.apply {  }
+        holder.apply {
+        }
     }
 
 

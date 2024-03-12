@@ -23,15 +23,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     binding = ActivityMainBinding.inflate(layoutInflater)
     setContentView(binding.root)
-    var storieslist: MutableList<CreateStory> = mutableListOf()
-    storieslist.add(CreateStory("Ritika"))
-    storieslist.add(CreateStory("Navpreet"))
-    storieslist.add(CreateStory("Tanya"))
-    storieslist.add(CreateStory("Palak"))
-    storieslist.add(CreateStory("Lovpreet"))
-//    binding.recyclerView.adapter = StoryRecycler(storieslist)
-//    binding.recyclerView.layoutManager =
-//        LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
     controller = findNavController(R.id.fragment)
 
@@ -44,7 +35,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
             R.id.profileFragment
         )
     )
-//  setupActionBarWithNavController(controller, appBarConfiguration)
+//setupActionBarWithNavController(controller, appBarConfiguration)
 
     binding.bottomNavigation.setOnItemSelectedListener {
         when (it.itemId) {
@@ -80,6 +71,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
                 R.id.profileFragment -> binding.bottomNavigation.menu.getItem(4).isChecked = true
             }
         }
+
 }
 
 }
