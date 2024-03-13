@@ -5,4 +5,11 @@
     <string name="Instagram_Name">Instagram</string>
     <string name="User_Name">User_Name</string>
     <string name="Location">Jalandhar city</string>
+    <string name="user_name">User_name</string>
+    <string name="posts">posts</string>
+    <string name="number">100</string>
+    <string name="numberrs">289</string>
+    <string name="Numbers">350</string>
+    <string name="followers">followers\n</string>
+    <string name="following">following</string>
 </resources>

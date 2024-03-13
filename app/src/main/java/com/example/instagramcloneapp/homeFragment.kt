@@ -43,15 +43,15 @@ class homeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var CreateStory: MutableList<CreateStory> = mutableListOf()
-        CreateStory.add(CreateStory("Ritika"))
-        CreateStory.add(CreateStory("Navpreet"))
-       CreateStory.add(CreateStory("Tanya"))
-       CreateStory .add(CreateStory("Palak"))
-        CreateStory.add(CreateStory("Lovpreet"))
-       // binding.StoryRecycler.adapter = StoryRecycler(CreateStory)
-        //val layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
-        //binding.StoryRecycler.layoutManager = layoutManager
+        var CreateStory: MutableList<StoryModules> = mutableListOf()
+        CreateStory.add(StoryModules("Ritika",1))
+        CreateStory.add(StoryModules("Navpreet",2))
+       CreateStory.add(StoryModules("Tanya", 3))
+       CreateStory .add(StoryModules("Palak",4))
+        CreateStory.add(StoryModules("Lovpreet",5))
+       // binding.rvStory.adapter = StoryRecycler(StoryModules)
+        val layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+        binding.rvStory.layoutManager = layoutManager
 
     }
 
